@@ -8,6 +8,7 @@ require "etc"
 Vagrant.configure("2") do |config|
   config.vm.box = ENV.fetch("VAGRANT_BOX", "precise")
   config.vm.box_url = ENV.fetch("VAGRANT_BOX_URL", "http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box")
+  config.vm.network "forwarded_port", guest: 9000, host: 6379
 
   config.vm.define :basebox do |v|
     v.vm.hostname = "basebox-#{Etc.getlogin}.tikal.vagrant"
