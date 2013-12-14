@@ -1,0 +1,10 @@
+/bin
+/bundle
+/cookbooks
+/tmp
+/.vagrant
+data_bags/personal/*
+temp/*
+/.bundle/ruby
+/.bundle/bundler
+/.chef
