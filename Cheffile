@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt'
+cookbook 'chef-client'
+cookbook 'chef_handler'
+cookbook 'java'
+cookbook 'mysql'
+cookbook 'nodejs'
+cookbook 'ohai'
+cookbook 'openssh'
+cookbook 'hipsnip-solr'
+cookbook 'sysctl'
+cookbook 'ulimit'
+cookbook 'vim'
