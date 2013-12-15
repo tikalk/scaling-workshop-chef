@@ -8,3 +8,10 @@
 #
 #
 include_recipe "hipsnip-solr"
+
+template "#{node['solr']['home']}/conf/schema.xml" do
+  source "schema.xml.erb"
+  owner node["jetty"]["user"]
+  group node["jetty"]["group"]
+  mode '644'
+end
